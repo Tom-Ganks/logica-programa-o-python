@@ -7,4 +7,4 @@ elif sexo == "Feminino":
     pesoIdeal = (62.1 * altura) - 44.7
 else:
     pesoIdeal = ("Attack Helicopter")
-print('Seu peso ideal é', sexo, pesoIdeal, "quilos")
+print('Seu peso ideal é', sexo, round(pesoIdeal, 2), "quilos")
