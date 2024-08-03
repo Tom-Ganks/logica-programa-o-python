@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cont1= 0
 cont2= 0
 cont3= 0
@@ -36,3 +37,6 @@ print(f"o número de votos em branco é : {cont0}")
 print(f"o número de votos nulos é : {cont4}")
 
 print(f"o número de eleitores que compareceram as urnas: {cont0 + cont1 + cont2 + cont3 + cont4}")
+=======
+
+>>>>>>> 275cba4d39bb3b4df361b0ad2021c2b179d3c4da
