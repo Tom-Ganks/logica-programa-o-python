@@ -26,14 +26,25 @@ class Aluno:
         else:
             return 'Reprovado'
 
-aluno1 = Aluno(nome='Matheus', matricula='2023', notas=[8, 7 , 8])
+def impressao(aluno):
+    print(f'Matricula: {aluno.matricula}')
+    print(f'Aluno: {aluno.nome}')
+    print(f'Notas: {aluno.notas}')
+    print(f'Media: {round(aluno.media, 1)}')
+    print(f'Conceito: {aluno.conceito}')
+    print(f'Resultado: {aluno.resultado}')
+
+aluno1 = Aluno(nome='Matheus', matricula='2023', notas=[8, 8, 8])
 aluno1.media = sum(aluno1.notas) / len(aluno1.notas)
 aluno1.conceito = aluno1.conceito_aluno()
 aluno1.resultado = aluno1.resultado_aluno()
 
-print(f'Matricula: {aluno1.matricula}')
-print(f'Aluno: {aluno1.nome}')
-print(f'Notas: {aluno1.notas}')
-print(f'Media: {round(aluno1.media, 1)}')
-print(f'Conceito: {aluno1.conceito}')
-print(f'Resultado: {aluno1.resultado}')
+aluno2 = Aluno(nome='Gabriel', matricula='2023', notas=[6.5, 4, 3])
+aluno2.media = sum(aluno2.notas) / len(aluno2.notas)
+aluno2.conceito = aluno2.conceito_aluno()
+aluno2.resultado = aluno2.resultado_aluno()
+
+impressao(aluno1)
+print('')
+impressao(aluno2)
+
